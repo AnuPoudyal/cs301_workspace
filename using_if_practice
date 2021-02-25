@@ -1,0 +1,25 @@
+//IF
+//let day_of_week=7;
+//let weather="sunny";
+//if(day_of_week>5){
+  //  console.log("sleep late");
+//}
+//if(day_of_week===6 && weather==="sunny"){
+  //  console.log("lets go for swimming");
+//} 
+
+//ELSE
+
+let day_of_week=7;
+let weather="sunny";
+if(day_of_week>5){
+    console.log("sleep late");
+    }
+    else{
+        console.log("get early");
+    }
+    if(day_of_week===7&&weather==='sunny'){
+        console.log("lets go for swimming");
+}else{
+    console.log("lets watch movie");
+}
