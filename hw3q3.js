@@ -28,3 +28,6 @@ if(cost>=50000 && cost<100000){
 if(cost>=100000 && cost<200000){
     console.log(2000+0.15*(cost-100000));
 }
+if(cost>=200000){
+    console.log(5000+0.10*(cost-200000))
+}

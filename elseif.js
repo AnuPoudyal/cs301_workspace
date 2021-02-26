@@ -13,23 +13,18 @@ if(age>=19){
     console.log("you can")
 }
 */
-const prompt=require('prompt-sync')();
-let grade=("enter grade");
+
+const prompt=require("prompt-sync")();
+let grade=prompt("enter grade");
 let gpa;
-Switch(grade){
-case'A':
-    
-    gpa=4.0;
-    break;
-    case 'B':
-        gpa=3.6;
-    break;
-
-    default:
-        gpa=0.0;
-
-
-
-
+switch(grade){
+    case 'A':
+        gpa=4.0;
+        break;
+        case 'B':
+           gpa=3.6;
+            break;
+default:
+    gpa=0.0;
 }
-console.log("your gpa is" +gpa);
+console.log("gpa is"+gpa);
