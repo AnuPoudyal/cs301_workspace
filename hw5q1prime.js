@@ -23,3 +23,49 @@ function checkPrime(num){
 const prompt = require("prompt-sync")();
 let number = parseInt(prompt("Please enter a positive number: "));
 checkPrime(number);
+
+
+
+let a = "1";
+let b = 1;
+switch (++a){
+    case b :
+        console.log("Yes")
+        break;
+
+     default: 
+     console.log ("No")   
+     
+}
+
+let x = 5;
+function display() {
+ let x = 3;
+ let y = 7;
+ console.log(x, y);
+}
+display();
+console.log(x);
+console.log(y);
+
+
+const prompt=require('prompt-sync')();
+let n=+prompt("enter num")
+
+function prime(n){
+
+    for(let i=2;i<n;i++){
+        if(n%i==0)
+        console.log("prime")
+        return;
+    }
+
+function isreversed(n){
+    let rev_num=reverse(n);
+    return isreversedprime(reversedNum);
+    
+
+}
+
+
+}

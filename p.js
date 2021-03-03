@@ -26,6 +26,20 @@ switch (++a){
      console.log ("No")   
      
 }
+ 
+let n=+prompt("enter digit");
+function reverse(n){
+let reversenum="";
+while(n!=0){
+    reversenum+=n%10;
+    n=Math.floor(n/10);
+}
+console.log(reversenum)
+}
+
+
+
+
 
 
 const prompt = require("prompt-sync")();
@@ -42,8 +56,9 @@ for(let i=1; i<10; i++){
     if(i%3===0) continue;
     console.log(i);
    }
-   for(let i=0;i<=100;i++){
 
+
+   for(let i=0;i<=100;i++){
     if(i%3==0 && i%5==0){
         console.log(i);
     }
@@ -65,13 +80,51 @@ for(let i=1; i<10; i++){
 }
 
 
+function reversedigit(n){
+let reversedigit='';
+while(n!=0){
+    reversedigit+=n%10;
+    n=Math.floor(n/10);
+}
+console.log(n)
+}
+
+
+const correct_pin=123;
+let i=1;
+let enter_pin=+prompt("enter pin")
+for(let i=0;i<3;i++){
+if(enter_pin==correct_pin){
+    console.log("correct");
+    break;
+}
+if(enter_pin!=correct_pin){
+console.log("incorrect")
+enter_pin=+prompt("enter again");
+
+}
+if(i==2){
+    console.log("your are locked out")
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 let sales=prompt("enter sales");
 let commission;
 if(sales<300){
     commission=0;
 }
 elseif(sales>=300&&sales<500){
-    commission=0.1*sales;
+    commission=0.1*(sales-20k);
 }
 elseif(sales>=500&&sales<1000) {
     commission=0.2*sales;

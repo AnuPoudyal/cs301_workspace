@@ -1,3 +1,8 @@
+
 const prompt=require('prompt-sync')();
-let name=prompt("enter the name");
-console.log(`you entered ${name}`);
+let input;
+do{
+    input=prompt("enter sth");
+console.log("input");
+
+} while(input!='stop');
