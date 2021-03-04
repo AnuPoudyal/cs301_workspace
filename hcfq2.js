@@ -3,22 +3,28 @@
 //a. Now write a program that asks two numbers from the user and displays HCF and LCM of
 //the two numbers.
 //Hint: search for relation between HCF and LCM. */
-
-let hcf = function (n1,n2){
-    let h_factor =1;
-    for(let i =1; i<=n1 && i<=n2; i++){
-        if(n1%i === 0 && n2%i === 0){
-            h_factor = i;
+"use strict";
+// eslint-disable-next-line valid-jsdoc
+/**
+ * 
+ * @param {*Number} num1 
+ * @param {*Number} num2 
+ */
+let hcf = function (num1,num2){
+    let hFactor =1;
+    for(let i =1; i<=num1 && i<=num2; i++){
+        if(num1%i === 0 && num2%i === 0){
+            hFactor = i;
             
         }
     }
-    console.log(h_factor);
-    return h_factor;
+    console.log(hFactor);
+    return hFactor;
 }
 
-let lcm = function(n1,n2){
-    let l_factor = (n1 * n2)/hcf(n1,n2);
-    return l_factor;
+let lcm = function(num1,num2){
+    let lFactor = (num1 * num2)/hcf(num1,num2);
+    return lFactor;
 }
 
 

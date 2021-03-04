@@ -36,11 +36,20 @@
 // let func = add;
 // let x = compute(func, 11,12);
 // console.log(x);
-
+   
 // o Refactor to pass add logic as an arrow function. (Make a copy first) */
-let compute = function (sum, n1,n2){
-    return sum(n1,n2);
+// eslint-disable-next-line semi
+"use strict"
+// eslint-disable-next-line valid-jsdoc
+/**
+ * 
+ * @param {Number} sum 
+ * @param {*Number} num1 
+ * @param {*Number} num2 
+ */
+let compute = function (sum, num1,num2){
+    return sum(num1,num2);
     }
-     let add = (n1,n2)=>n1+n2;
+     let add = (num1,num2)=>num1+num2;
      let func = add;
      console.log(compute(func,23,24));
