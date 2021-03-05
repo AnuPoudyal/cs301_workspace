@@ -1,3 +1,4 @@
+"use strict"
 const prompt= require('prompt-sync')();
 let x1=prompt("enter the value of x1");
 let y1=prompt("enter the value of y1");
