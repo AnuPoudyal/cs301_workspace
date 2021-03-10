@@ -1,4 +1,6 @@
+"use strict"
 const prompt=require("prompt-sync")();
+
 let r=prompt("enter radius");
 let A;
 function area(r){

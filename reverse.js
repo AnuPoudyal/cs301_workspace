@@ -1,4 +1,5 @@
-let x=0;
+ 
+\let x=0;
 let y="hello";
 let z=x|| "hi";
 console.log(z);
@@ -17,3 +18,5 @@ for(let count=1;count<=10;count++){
 console.log(count)
 
 
+
+let x
